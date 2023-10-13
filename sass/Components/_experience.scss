@@ -1,0 +1,47 @@
+.experience{
+    &-heading{
+        font-size: 40rem;
+        background: url('../img/img7.png') no-repeat 50%;
+        color:transparent;
+        line-height: .8;
+        -webkit-background-clip: text;
+        font-weight: 600;
+        z-index: 2;
+        @include respond(phone){
+            font-size: 20rem;
+        }
+    }
+    &-row{
+        [class^='col-']{
+            &:not(:last-child){
+                @include respond(phone){
+                    margin-right: 0;
+                    margin-bottom: 6rem;
+                }
+            }
+        }
+        @include respond(tab-land){
+            padding:0 5rem;
+        }
+        @include respond(tab-800){
+            flex-wrap: wrap;
+        }
+    }
+    &-col{
+        position: relative;
+    }
+    &-img{
+        position: absolute;
+        top:15rem;
+        right:0;
+        z-index: -1;
+    }
+    &-title{
+        position: absolute;
+        right:0;
+        bottom:-15rem;
+        @include respond(phone){
+            bottom:-3rem;
+        }
+    }
+}

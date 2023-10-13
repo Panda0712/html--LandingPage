@@ -1,0 +1,49 @@
+.testimonial{
+    &-heading{
+        margin:2.5rem 0 3.5rem 0;
+    }
+    &-secondary{
+        display:block;
+        margin:0 auto;
+        width:40%;
+        margin-bottom: 6rem;
+        @include respond(scroll-snap){
+            width:80%;
+        }
+    }
+    &-review{
+        position: relative;
+        text-align: center;
+        padding:3rem 0;
+        box-shadow: 0px 8px 24px rgba(149,157,165,.2);
+    }
+    &-img{
+        transform:translateY(-4.5rem);
+    }
+    &-paragraph{
+        font-size: 3rem;
+        color:$color-white;
+        display:block;
+        margin:0 auto 4rem auto;
+        width:75%;
+        @include respond(phone){
+            font-size: 2rem;
+        }
+    }
+    &-span{
+        font-weight: bold;
+    }
+    &-authorimg{
+        width:8rem;
+        height:8rem;
+        border-radius: 50%;
+        display:block;
+        margin:0 auto;
+    }
+    &-authorspan{
+        color:$color-text;
+        font-size: 2.1rem;
+        font-weight: 600;
+        margin:1.5rem 0;
+    }
+}

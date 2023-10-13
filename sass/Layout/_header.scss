@@ -1,0 +1,181 @@
+.header{
+    position: relative;
+    background-position: left top;
+    margin-bottom: 15rem;
+    @include respond(tab-port){
+        background: rgba($color-black,.2);
+    }
+    &-img{
+        position: absolute;
+        width:100%;
+        z-index: -1;
+        right:0;
+        top:0;
+    }
+    &-nav{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        padding:2rem 0;
+        border-bottom: 1px solid rgba($color-white,.3);
+        margin-bottom: 15rem;
+        @include respond(scroll-snap){
+            margin-bottom: 10rem;
+        }
+        @include respond(tab-800){
+            margin-bottom: 6rem;
+            flex-direction: column;
+        }
+    }
+    .nav-list{
+        display:flex;
+        list-style: none;
+        @include respond(tab-800){
+            margin:3rem 0;
+        }
+        @include respond(phone){
+            display:none;
+        }
+    }
+    .nav-item{
+        font-size: 1.8rem;
+        color:$color-white;
+        font-weight: 500;
+        &:not(:last-child){
+            margin-right: 4rem;
+        }
+    }
+    .nav-icon{
+        display:flex;
+        align-items: center;
+        color:$color-white;
+        @include respond(phone){
+            margin-top: 3.5rem;
+        }
+    }
+    .search-icon{
+        margin-right: 4rem;
+        font-size: 2.5rem;
+        cursor:pointer;
+    }
+    .bars{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid $color-white;
+        padding:.6rem;
+        border-radius: .4rem;
+        cursor:pointer;
+        &-icon{
+            font-size: 1.5rem;
+        }
+    }
+    &-content{
+        margin-left: 10rem;
+        margin-bottom: 40rem;
+        @include respond(tab-land){
+            margin-bottom: 30rem;
+        }
+        @include respond(scroll-snap){
+            margin-bottom: 22rem;
+            margin-left: 6.5rem;
+        }
+        @include respond(tab-800){
+            margin-bottom: 10rem;
+            margin-left: 0;
+            text-align: center;
+        }
+        @include respond(phone){
+            padding:0 2rem;
+        }
+    }
+    &-heading{
+        font-size: 12rem;
+        color:$color-white;
+        line-height: 1;
+        @include respond(mdm-big-desktop){
+            text-shadow: 0 1.5rem 4rem rgba($color-black,.4);
+        }
+        @include respond(tab-port){
+            text-shadow: 0 1.5rem 4rem rgba($color-black,.3);
+        }
+        @include respond(phone){
+            font-size: 6.5rem;
+            line-height: 1.5;
+        }
+    }
+    &-title{
+        font-size: 4rem;
+        color:$color-white;
+        margin-bottom: 4rem;
+        @include respond(mdm-big-desktop){
+            text-shadow: 0 1.5rem 4rem rgba($color-black,.4);
+        }
+        @include respond(tab-port){
+            text-shadow: 0 1.5rem 4rem rgba($color-black,.3);
+        }
+        @include respond(phone){
+            font-size: 3rem;
+        }
+    }
+    &-video{
+        display:flex;
+        align-items: center;
+        @include respond(tab-800){
+            justify-content: center;
+        }
+    }
+    .play{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:7rem;
+        height:7rem;
+        border:4px solid $color-white;
+        border-radius: 50%;
+        margin-right: 2.5rem;
+        &-icon{
+            color:$color-white;
+            font-size: 2rem;
+        }
+    }
+    &-paragraph{
+        font-size: 1.8rem;
+        color:$color-white;
+    }
+    &-row{
+        @include respond(tab-port){
+            flex-wrap: wrap;
+        }
+        [class^='col-']{
+            &:not(:last-child){
+                margin-right: 3rem;
+                @include respond(tab-port){
+                    margin-right: 0;
+                    margin-bottom: 3rem;
+                }
+            }
+            @include respond(tab-port){
+                width:100%;
+            }
+        }
+        @include respond(tab-land){
+            padding:0 4rem;
+        }
+    }
+    &-col{
+        background: $color-background;
+        padding:5rem;
+        text-align: center;
+        border-radius: .5rem;
+    }
+    .introduce-heading{
+        font-size: 2.2rem;
+        color:$color-white;
+        margin:2rem 0;
+    }
+    .introduce-paragraph{
+        font-size: 1.8rem;
+        color:$color-text;
+    }
+}

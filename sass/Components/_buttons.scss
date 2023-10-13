@@ -1,0 +1,17 @@
+.btn{
+    &:link,
+    &:visited{
+        position: relative;
+        display:inline-block;
+        text-decoration: none;
+        font-size: $default-font-size;
+        cursor:pointer;
+    }
+    &--orange{
+        color:$color-white;
+        background-image: linear-gradient(to right, #f56766, #f58826);
+        font-weight: 600;
+        border-radius: .4rem;
+        padding:1.2rem 7rem;
+    }
+}

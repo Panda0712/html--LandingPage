@@ -1,0 +1,36 @@
+.section-about{
+    position: relative;
+    margin-bottom: 18rem;
+}
+.section-work{
+    position: relative;
+    margin-bottom: 15rem;
+}
+.section-experience{
+    position: relative;
+    margin-bottom: 24rem;
+    @include respond(tab-800){
+        margin-bottom: 15rem;
+    }
+}
+.section-brand{
+    position: relative;
+    margin-bottom: 6rem;
+}
+.section-testimonial{
+    position: relative;
+    padding:0 25rem;
+    @include respond(tab-port){
+        padding:0 10rem;
+    }
+    @include respond(phone){
+        padding:0 5rem;
+    }
+}
+.section-invite{
+    position: relative;
+    padding:0 10rem;
+    @include respond(phone){
+        padding:0 5rem;
+    }
+}

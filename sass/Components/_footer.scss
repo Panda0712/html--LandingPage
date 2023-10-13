@@ -1,0 +1,127 @@
+.footer{
+    position: relative;
+    background:$color-background;
+    padding:45rem 0 0 0;
+    &1{
+        display:flex;
+        justify-content: space-around;
+        margin-bottom: 15rem;
+        @include respond(phone){
+            flex-direction: column;
+            padding:0 5rem;
+        }
+    }
+    &-left{
+        width:25%;
+        @include respond(phone){
+            width:100%;
+        }
+    }
+    &-center{
+        @include respond(phone){
+            margin: 6rem 0;
+        }
+    }
+    &-right{
+        width:25%;
+        @include respond(phone){
+            width:100%;
+        }
+    }
+    &-paragraph{
+        font-size: 1.6rem;
+        color:$color-text;
+        margin:3rem 0;
+    }
+    &-list{
+        display:flex;
+        &--2{
+            list-style: none;
+        }
+    }
+    &-icon{
+        font-size: 1.8rem;
+        color:$color-text;
+        &:not(:last-child){
+            margin-right: 3rem;
+        }
+    }
+    &-title{
+        font-size: 1.8rem;
+        color:$color-white;
+        margin-bottom: 2.5rem;
+        &--2{
+            font-size: 1.8rem;
+            color:$color-white;
+            margin-bottom: 2.5rem;
+        }
+    }
+    &-item{
+        font-size: 1.8rem;
+        color:$color-text;
+        &:not(:last-child){
+            margin-bottom: 1.5rem;
+        }
+    }
+    &-phone{
+        font-size: 1.8rem;
+        color:$color-text;
+        margin-bottom: 2rem;
+        &--2{
+            font-size: 1.8rem;
+            color:$color-text;
+            margin-bottom: 3.5rem;
+        }
+    }
+    &-span{
+        color:$color-white;
+    }
+    &-email{
+        font-size: 1.8rem;
+        color:$color-text;
+        margin-bottom: 1.5rem;
+    }
+    &-fax{
+        font-size: 1.8rem;
+        color:$color-text;
+        margin-bottom: 3.5rem;
+    }
+    &-address{
+        font-size: 1.8rem;
+        color:$color-text;
+        line-height: 1.8;
+    }
+    &2{
+        position: relative;
+        background: $color-body;
+        padding:6.5rem 0;
+        &-rocket{
+            background-image: linear-gradient(to right, #f56766, #f58826);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            padding:2.5rem;
+            position: absolute;
+            right:7.5rem;
+            top:-3.5rem;
+            border-radius: .4rem;
+        }
+        &-icon{
+            color:$color-white;
+        }
+        &-text{
+            color:$color-text;
+            font-size: 1.8rem;
+            line-height:1.8rem;
+            margin-left: 10rem;
+            @include respond(tab-800){
+                text-align: center;
+                margin:0 5rem;
+                line-height: 1.5;
+            }
+        }
+        &-span{
+            color:$color-white;
+        }
+    }
+}
